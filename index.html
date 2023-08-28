@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ужас Элдрича</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./assets/favicon.ico">
+</head>
+<body>
+    <div class="preloader">
+        <img src="./assets/eye.gif" alt="">
+    </div>
+    <div class="ancients-box">
+        <h1>ДРЕВНЕЕ ЗЛО ПРОБУДИЛОСЬ В ВЕЧНОЙ ПУСТОТЕ!</h1>
+        <h2>Выбери свою судьбу!</h2>
+        <div class="ancients-list">
+            <div class="ancient"><img class="ancient_1" src="./assets/Ancients/Azathoth.png" alt=""></div>
+            <div class="ancient"><img class="ancient_2" src="./assets/Ancients/Cthulthu.png" alt=""></div>
+            <div class="ancient"><img class="ancient_3" src="./assets/Ancients/IogSothoth.png" alt=""></div>
+            <div class="ancient"><img class="ancient_4" src="./assets/Ancients/ShubNiggurath.png" alt=""></div>
+        </div>
+    </div>
+    <div class="dificulty-box non-displayed">
+        <h1>КАКОВА СТЕПЕНЬ ТВОЕГО ОТЧАЯНИЯ?</h1>
+        <div class="dificulty-list">
+            <div class="dificulty-level very-easy">
+                <span>Я живу и радуюсь каждому дню</span>
+                <span class="dificulty-level-text">(Очень легко)</span>
+            </div>
+            <div class="dificulty-level easy">
+                <span>На мне лежит определенный груз сожалений</span>
+                <span class="dificulty-level-text">(Легко)</span>
+            </div>
+            <div class="dificulty-level normal">
+                <span>Иногда я замечаю, как тени смотрят на меня</span>
+                <span class="dificulty-level-text">(Норма)</span>
+            </div>
+            <div class="dificulty-level hard">
+                <span>Бездна мрачных мыслей в моей голове</span>
+                <span class="dificulty-level-text">(Сложно)</span>
+            </div>
+            <div class="dificulty-level very-hard">
+                <span>Я вижу вечную тьму! Тьфу, опять капюшон сполз на глаза!</span>
+                <span class="dificulty-level-text">(Очень сложно)</span></div>
+        </div>
+    </div>
+    <div class="mithic-card-box non-displayed">
+        <div class="game-info-box">
+            <div class="game-monster-box">
+                <img class="game-info-icon" src="./assets/monster.svg" alt="Иконка древнего">
+                <span class="game-info-text game-monster"></span>
+            </div>
+            <div class="game-dificulty-box">
+                <img class="game-info-icon" src="./assets/dificulty.svg" alt="Иконка древнего">
+                <span class="game-info-text game-dificulty"></span>
+            </div>
+        </div>
+        <div class="cards-box">
+            <div class="stages-box non-displayed">
+                <div class="stage-level">
+                    <span class="stage-name stage-name_1"><span class="level-name">Уровень 1</span> - Легкий ужас</span>
+                    <div class="stage stage_1">
+                        <div class="green"></div>
+                        <div class="brown"></div>
+                        <div class="blue"></div>
+                    </div>
+                </div>
+                <div class="stage-level">
+                    <span class="stage-name stage-name_2"><span class="level-name">Уровень 2</span> - Непреодолимый страх</span>
+                    <div class="stage stage_2">
+                        <div class="green"></div>
+                        <div class="brown"></div>
+                        <div class="blue"></div>
+                    </div>
+                </div>
+                <div class="stage-level">
+                    <span class="stage-name stage-name_3"><span class="level-name">Уровень 3</span> - Вселенский кошмар</span>
+                    <div class="stage stage_3">
+                        <div class="green"></div>
+                        <div class="brown"></div>
+                        <div class="blue"></div>
+                    </div>
+                </div>
+            </div>
+            <img class="mithic-card" src="./assets/mythicCardBackground.png" alt="Колода мифов">
+            <div class="current-card"></div>
+        </div>
+        <button class="reset" onclick='location.reload(); return false;'>Испытать страдания снова?</button>
+    </div>
+<script type="module" src="./index.js"></script>
+<script src="./selfgrade.js"></script>
+</body>
+</html>

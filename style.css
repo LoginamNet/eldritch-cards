@@ -1,0 +1,526 @@
+/* ________________________________main styles________________________________*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Poiret One', cursive;
+    font-size: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    background-image: url(./assets/home.png);
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+}
+
+.preloader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(4,2,4);
+    opacity: 1;
+}
+
+.preloader img {
+    user-select: none;
+}
+
+h1,
+h2 {
+    color: wheat;
+    user-select: none;
+    cursor: default;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+/* ________________________________first screen________________________________*/
+
+.ancients-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.ancients-box img {
+    width: 230px;
+    cursor: pointer;
+    border: 4px solid wheat;
+    border-radius: 15px;
+    box-shadow: 0 0 7px 5px #000;
+    filter: grayscale(70%);
+    transition: 0.5s;
+}
+
+.ancients-box img:hover {
+    box-shadow: 0 0 7px 5px rgb(133, 58, 29);
+    filter: grayscale(0%);
+    transform: scale(1.05);
+}
+
+.ancients-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* ________________________________second screen________________________________*/
+
+.dificulty-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.dificulty-box h1 {
+    margin-bottom: 20px;
+}
+
+.dificulty-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.dificulty-level {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 13px;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    color: antiquewhite;
+    user-select: none;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 4px solid wheat;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+
+.dificulty-level:hover {
+    transform: scale(1.05);
+    color: #000;
+    background-color: antiquewhite;
+}
+
+.dificulty-level-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+/* ________________________________third screen________________________________*/
+
+.mithic-card-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.game-info-box {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    width: 100%;
+    user-select: none;
+}
+
+.game-monster-box,
+.game-dificulty-box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.game-info-icon {
+    width: 40px;
+}
+
+.game-info-text {
+    font-size: 22px;
+    font-weight: bolder;
+    color: wheat;
+}
+
+.stages-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 100%;
+    user-select: none;
+}
+
+.stage-level {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 15px;
+    width: 100%;
+}
+
+.stage-name {
+    color: wheat;
+    transition: 0.5s;
+}
+
+.level-name {
+    font-weight: bolder;
+}
+
+.stage-done {
+    color: lightgrey;
+}
+
+.stage {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-weight: bolder;
+    color: wheat;
+}
+
+.green,
+.brown,
+.blue {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 50px;
+    border: 4px solid wheat;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+
+.green {
+    background-color: rgba(170, 223, 167, 0.4);
+}
+
+.brown {
+    background-color: rgba(151, 72, 85, 0.4);
+}
+
+.blue {
+    background-color: rgba(146, 194, 223, 0.4);
+}
+
+.green-done,
+.brown-done,
+.blue-done {
+    background-color: rgba(107, 102, 103, 0.4);
+}
+
+.mithic-card {
+    position: relative;
+    z-index: 100;
+    width: 230px;
+    cursor: pointer;
+    background: rgba(48, 48, 48, 0.4);
+    border: 4px solid wheat;
+    border-radius: 15px;
+    filter: grayscale(70%);
+    transition: 0.5s;
+}
+
+.mithic-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 7px 5px rgb(133, 58, 29);
+    filter: grayscale(0%);
+}
+
+.mithic-card:not([src="./assets/mythicCardBackground.png"]):hover {
+    cursor: default;
+    box-shadow: none;
+    transform: none;
+    filter: grayscale(70%);
+}
+
+.mithic-card:active {
+    transform: scale(1);
+}
+
+.cards-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.current-card {
+    width: 230px;
+    height: 100%;
+    border: 2px solid #000;
+    background: rgba(48, 48, 48, 0.4);
+    background-image: url(./assets/card-placeholder.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+}
+
+.reset {
+    font-family: 'Poiret One', cursive;
+    font-size: 20px;
+    font-weight: bolder;
+    color: wheat;
+    margin-top: 20px;
+    padding: 20px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 4px solid wheat;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+
+.reset:hover {
+    transform: scale(1.05);
+    color: #000;
+    background-color: antiquewhite;
+}
+
+.non-displayed {
+    display: none;
+}
+
+/* ________________________________animations________________________________*/
+
+@keyframes preloader-hidden {
+
+    0% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+  
+}
+
+@keyframes preloader-shown {
+
+    0% {
+        opacity: 0;
+        visibility: visible;
+    }
+
+    30% {
+        opacity: 1;
+        visibility: visible;
+
+    }
+
+    70% {
+        opacity: 1;
+        visibility: visible;
+
+    }
+
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+  
+}
+
+.preloader-hidden {
+    animation-name: preloader-hidden;
+    animation-duration: 0.5s;
+}
+
+.preloader-shown {
+    animation-name: preloader-shown;
+    animation-duration: 2s;
+}
+
+@keyframes card-hidden {
+
+    0% {
+        transform: translateX(0px);
+        filter: grayscale(0%);
+    }
+
+    30% {
+        transform: translateX(-260px);
+        filter: grayscale(100%);
+    }
+
+    70% {
+        transform: translateX(-260px);
+        filter: grayscale(100%);
+    }
+
+    100% {
+        transform: translateX(0px);
+        filter: grayscale(0%);
+    }
+  
+}
+
+.card-hidden {
+    animation-name: card-hidden;
+    animation-duration: 0.8s;
+}
+
+/* ________________________________adaptive________________________________*/
+
+@media (max-width: 480px) {
+
+    h1,
+    h2 {
+        text-align: center;
+    }
+        
+    h1 {
+        font-size: 1.2rem;
+    }
+        
+    h2 {
+        font-size: 1rem;
+    }
+
+    .ancients-box,
+    .dificulty-box,
+    .mithic-card-box {
+        width: 90%;
+    }
+
+    .ancients-box img {
+        width: 120px;
+    }
+
+    .ancients-list {
+        flex-wrap: wrap;
+    }
+
+    .dificulty-level {
+        width: 80%;
+        font-size: 1rem;
+    }
+
+    .dificulty-level-text {
+        font-size: 0.8rem;
+    }
+
+    .game-info-box {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .game-monster-box,
+    .game-dificulty-box {
+        gap: 10px;
+    }
+
+    .game-info-text {
+        font-size: 1.2rem;
+    }
+
+
+    .cards-box {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .stages-box {
+        align-items: flex-start;
+        gap: 12px;
+        height: auto;
+    }
+
+    .stage-level {
+        gap: 10px;
+    }
+
+    .stage-name {
+        font-size: 1rem;
+    }
+
+    .green,
+    .brown,
+    .blue {
+        width: 60px;
+        height: 40px;
+    }
+
+    .mithic-card {
+        width: 120px;
+    }
+
+    .current-card {
+        width: 120px;
+        height: 172px;
+    }
+
+    .reset {
+        font-size: 1rem;
+        margin-top: 5px;
+        padding: 20px;
+    }
+
+    @keyframes card-hidden {
+
+        0% {
+            transform: translateX(0px);
+            filter: grayscale(0%);
+        }
+
+        30% {
+            transform: translateX(-140px);
+            filter: grayscale(100%);
+        }
+
+        70% {
+            transform: translateX(-140px);
+            filter: grayscale(100%);
+        }
+
+        100% {
+            transform: translateX(0px);
+            filter: grayscale(0%);
+        }
+    
+    }
+
+}
